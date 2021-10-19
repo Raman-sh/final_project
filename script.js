@@ -35,3 +35,9 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 //end
+var typed = new Typed(".typing", {
+    strings: ["Career", "Education", "Life","Future"],
+    typeSpeed: 130,
+    backSpeed: 140,
+    loop: true
+});

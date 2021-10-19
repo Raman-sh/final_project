@@ -42,8 +42,9 @@ nav{
     align-items: flex-start;
 }
 nav img{
-    width: 50%;
-    height: 22vh;
+    width: 110%;
+    height: 15vh;
+    margin-top: 15px;
 }
 .nav-links{
     flex: 1;
@@ -61,7 +62,7 @@ nav img{
         font-size: 20px;
     }
     .nav-links ul li a:hover{
-        color: #FE442C;
+        color: #00b894;
         font-size: 22px;
         font-weight: bold;
     }
@@ -90,8 +91,9 @@ nav img{
     text-align: center;
     font-family: "Raleway",sans-serif;
 }
-.text-box h2{
+.text-box h1{
     font-size: 45px;
+    font-weight: bold;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -108,11 +110,16 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #00b894;
+    background: #00b894;
     transition: 1s;
+    font-size: 17px;
+    font-weight: bold;
 }
 /* card button*/
 .hero-bt{
@@ -320,3 +327,30 @@ h3{
     .text-wrap {
         white-space: normal;
       }
+
+/* animation top */
+.change_content::after{
+ content:'';
+ animation: changetext 10s infinite linear;
+color:#00b894;
+}
+@keyframes changetext{
+    0%{content: "CAREER";}
+    25%{content: "GROWTH";}
+    50%{content: "EDUCATION";}
+    100%{content: "LIFE";}
+    75%{content: "FUTURE";}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
